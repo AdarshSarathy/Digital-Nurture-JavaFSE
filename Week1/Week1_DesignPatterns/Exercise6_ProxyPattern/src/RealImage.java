@@ -1,0 +1,1 @@
+public class RealImage implements Image { private final String filename; public RealImage(String f) { this.filename = f; loadFromDisk(); } private void loadFromDisk() { System.out.println("[RealImage] Loading: " + filename); } public void display() { System.out.println("[RealImage] Displaying: " + filename); } public String getFilename() { return filename; } }

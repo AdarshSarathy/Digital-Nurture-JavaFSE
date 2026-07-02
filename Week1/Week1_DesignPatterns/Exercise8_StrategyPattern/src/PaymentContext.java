@@ -1,0 +1,1 @@
+public class PaymentContext { private PaymentStrategy strategy; public void setStrategy(PaymentStrategy s) { this.strategy = s; System.out.println("[Context] Strategy set to: " + s.getMethodName()); } public boolean executePayment(double amount) { if (strategy == null) { System.out.println("[Context] No strategy set."); return false; } return strategy.pay(amount); } }

@@ -1,0 +1,1 @@
+public class ExcelDocument implements Document { public void open(){System.out.println("[Excel] Opening...");} public void close(){System.out.println("[Excel] Closing.");} public void save(){System.out.println("[Excel] Saving .xlsx.");} public String getDocumentType(){return "Excel Spreadsheet (.xlsx)";} }

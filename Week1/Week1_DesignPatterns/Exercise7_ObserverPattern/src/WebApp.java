@@ -1,0 +1,1 @@
+public class WebApp implements Observer { private final String dashboardName; public WebApp(String n) { dashboardName = n; } public void update(String stockName, double newPrice) { System.out.println("  [WEB]  [WebApp - " + dashboardName + "] LIVE: " + stockName + " = $" + String.format("%.2f", newPrice)); } }

@@ -1,0 +1,1 @@
+public class MobileApp implements Observer { private final String appName; public MobileApp(String n) { appName = n; } public void update(String stockName, double newPrice) { System.out.println("  [APP]  [MobileApp - " + appName + "] PUSH: " + stockName + " = $" + String.format("%.2f", newPrice)); } }

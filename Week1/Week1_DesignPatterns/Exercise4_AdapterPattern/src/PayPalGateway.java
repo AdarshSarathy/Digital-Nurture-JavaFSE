@@ -1,0 +1,1 @@
+public class PayPalGateway { public String sendPayment(double amount, String ref) { System.out.println("[PayPal] Sending $" + amount + " ref=" + ref); return "PP-" + ref; } public boolean cancelPayment(String id) { System.out.println("[PayPal] Cancelling " + id); return true; } }

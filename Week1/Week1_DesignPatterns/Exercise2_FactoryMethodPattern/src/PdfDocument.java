@@ -1,0 +1,1 @@
+public class PdfDocument implements Document { public void open(){System.out.println("[PDF] Opening...");} public void close(){System.out.println("[PDF] Closing.");} public void save(){System.out.println("[PDF] Saving .pdf.");} public String getDocumentType(){return "PDF Document (.pdf)";} }
