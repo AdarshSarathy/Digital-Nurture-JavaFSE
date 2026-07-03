@@ -1,1 +1,0 @@
-public class CreditCardPayment implements PaymentStrategy { private final String cardNumber; public CreditCardPayment(String n) { cardNumber = n; } public boolean pay(double amount) { System.out.println("[Credit Card ending " + cardNumber.substring(cardNumber.length()-4) + "] Charged $" + amount); return true; } public String getMethodName() { return "Credit Card"; } }

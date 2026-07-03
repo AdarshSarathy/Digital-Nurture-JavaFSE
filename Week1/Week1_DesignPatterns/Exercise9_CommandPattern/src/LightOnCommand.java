@@ -1,1 +1,0 @@
-public class LightOnCommand implements Command { private final Light light; public LightOnCommand(Light l) { light = l; } public void execute() { light.turnOn(); } public void undo() { light.turnOff(); } }

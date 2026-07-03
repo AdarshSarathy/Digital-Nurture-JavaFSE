@@ -1,1 +1,9 @@
-public abstract class DocumentFactory { public abstract Document createDocument(); public Document openNewDocument() { Document d = createDocument(); System.out.println("Creating: " + d.getDocumentType()); d.open(); return d; } }
+public abstract class DocumentFactory { 
+    public abstract Document createDocument(); 
+    public Document openNewDocument() { 
+        Document d = createDocument(); 
+        System.out.println("Creating: " + d.getDocumentType()); 
+        d.open(); 
+        return d; 
+    } 
+}

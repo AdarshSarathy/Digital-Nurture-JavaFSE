@@ -1,1 +1,0 @@
-public class PayPalPayment implements PaymentStrategy { private final String email; public PayPalPayment(String e) { email = e; } public boolean pay(double amount) { System.out.println("[PayPal " + email + "] Paid $" + amount); return true; } public String getMethodName() { return "PayPal"; } }

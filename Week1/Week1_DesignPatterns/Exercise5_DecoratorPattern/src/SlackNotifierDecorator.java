@@ -1,1 +1,0 @@
-public class SlackNotifierDecorator extends NotifierDecorator { private final String channel; public SlackNotifierDecorator(Notifier n, String channel) { super(n); this.channel = channel; } public void send(String message) { super.send(message); System.out.println("[Slack-> #" + channel + "] " + message); } }

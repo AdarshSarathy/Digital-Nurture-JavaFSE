@@ -1,1 +1,0 @@
-public class StripeGateway { public String charge(String token, long amountCents) { System.out.println("[Stripe] Charging " + amountCents + " cents token=" + token); return "ch_" + token; } public boolean reverse(String chargeId) { System.out.println("[Stripe] Reversing " + chargeId); return true; } }

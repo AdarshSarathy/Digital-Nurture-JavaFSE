@@ -1,1 +1,0 @@
-public class SMSNotifierDecorator extends NotifierDecorator { private final String phone; public SMSNotifierDecorator(Notifier n, String phone) { super(n); this.phone = phone; } public void send(String message) { super.send(message); System.out.println("[SMS  -> " + phone + "] " + message); } }

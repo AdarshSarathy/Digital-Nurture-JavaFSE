@@ -1,1 +1,21 @@
-public class ExcelDocument implements Document { public void open(){System.out.println("[Excel] Opening...");} public void close(){System.out.println("[Excel] Closing.");} public void save(){System.out.println("[Excel] Saving .xlsx.");} public String getDocumentType(){return "Excel Spreadsheet (.xlsx)";} }
+public class ExcelDocument implements Document {
+    @Override
+    public void open() {
+        System.out.println("[Excel] Opening...");
+    }
+
+    @Override
+    public void close() {
+        System.out.println("[Excel] Closing.");
+    }
+
+    @Override
+    public void save() {
+        System.out.println("[Excel] Saving .xlsx.");
+    }
+
+    @Override
+    public String getDocumentType() {
+        return "Excel Spreadsheet (.xlsx)";
+    }
+}

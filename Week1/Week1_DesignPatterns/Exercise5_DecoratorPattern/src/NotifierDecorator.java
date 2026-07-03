@@ -1,1 +1,0 @@
-public abstract class NotifierDecorator implements Notifier { protected final Notifier wrapped; protected NotifierDecorator(Notifier n) { this.wrapped = n; } public void send(String message) { wrapped.send(message); } }

@@ -1,6 +1,6 @@
 import java.util.Arrays;
 public class SearchAlgorithms {
-    public static Product linearSearchByName(Product[] products, String targetName) {
+    public static SearchProduct linearSearchByName(SearchProduct[] products, String targetName) {
         System.out.println("[Linear Search] Searching for: \"" + targetName + "\"");
         for (int i = 0; i < products.length; i++) {
             if (products[i].getProductName().equalsIgnoreCase(targetName)) {
@@ -11,7 +11,7 @@ public class SearchAlgorithms {
         System.out.println("  Not found after " + products.length + " comparison(s).");
         return null;
     }
-    public static Product binarySearchByName(Product[] sortedProducts, String targetName) {
+    public static SearchProduct binarySearchByName(SearchProduct[] sortedProducts, String targetName) {
         System.out.println("[Binary Search] Searching for: \"" + targetName + "\"");
         int low=0, high=sortedProducts.length-1, step=0;
         while (low <= high) {
@@ -24,8 +24,8 @@ public class SearchAlgorithms {
         System.out.println("  Not found after " + step + " comparison(s).");
         return null;
     }
-    public static Product[] sortByName(Product[] products) {
-        Product[] sorted = Arrays.copyOf(products, products.length);
+    public static SearchProduct[] sortByName(SearchProduct[] products) {
+        SearchProduct[] sorted = Arrays.copyOf(products, products.length);
         Arrays.sort(sorted);
         return sorted;
     }

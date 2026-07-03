@@ -1,1 +1,0 @@
-public interface PaymentProcessor { boolean processPayment(String orderId, double amount); boolean refund(String transactionId); String getGatewayName(); }
