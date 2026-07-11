@@ -16,8 +16,7 @@ public class LibraryManagementApplication {
     public static void main(String[] args) {
 
         // Load the Spring application context from the XML configuration
-        ApplicationContext context =
-                new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         // Retrieve the BookService bean from the context
         BookService bookService = context.getBean("bookService", BookService.class);
@@ -51,5 +50,8 @@ public class LibraryManagementApplication {
         System.out.println();
 
         bookService.removeBook(1);
+
+        // Close the context to prevent resource leak
+        ((ClassPathXmlApplicationContext) context).close();
     }
 }
